@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://onsac.com/">
-    <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/onsac_01.png" width="150" height="100" >
+    <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/onsac_01.png" width="200" height="100" >
   </a>
 </p>
 <p align="center">
