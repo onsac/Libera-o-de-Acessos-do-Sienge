@@ -1,8 +1,13 @@
 <p align="center">
   <a href="https://onsac.com/">
-    <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/AIO%20INTEGRADOR.png" >
+    <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/Logo%20OnSAC%20-%20OK.png" >
   </a>
 </p>
+<p align="center">
+ Integração e  Automação em tempo real
+  <br>
+  <a href="https://onsac.com/"><strong>Conheça mais sobre nosso serviço »</strong></a>
+  </p>
 
 ## Parceria OnSAC com Sienge 
 <p align="center">
