@@ -4,13 +4,15 @@
   </a>
 </p>
 
-<h3 align="center">AIO Integrador</h3>
-
+## Parceria OnSAC com Sienge 
 <p align="center">
-  Automações e Integrações sem limitações (AIops/DEVops)
-  <br>
-  <a href="https://onsac.com/"><strong>Conheça mais sobre nosso serviço »</strong></a>
-  </p>
+     <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/OnSAC%20%2B%20Sienge.png" >
+</p>
+
+A parceria entre a OnSAC e o Sienge é uma colaboração estratégica para fornecer soluções de automação e integração para empresas da construção civil. A OnSAC possui expertise em automação de processos de negócio e integração de sistemas, enquanto o Sienge é um software especializado em gestão para o setor da construção.
+Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatizar e otimizar seus processos, como o lançamento de notas fiscais, validação de pedidos, entre outros. A integração entre os sistemas permite uma maior eficiência operacional, redução de erros e agilidade nos pagamentos.
+
+
 
 ## Liberação de acessos de API’s do Sienge
 
