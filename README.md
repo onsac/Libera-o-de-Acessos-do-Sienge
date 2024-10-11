@@ -29,13 +29,6 @@
 /bills
 ```
 ## Liberação de acessos de Ações do usuário no Sienge
-
-- [ACESSO CAD APOIO](#acesso-cad-apoio)
-- [ACESSO CAD  Empresas](#acesso-cad-empresas)
-- [ACESSO CAD Obras/Centros de Custo](#acesso-cad-obras/centros-de-custo)
-- [ACESSO CAD  Pessoas - Credores](#acesso-cad-pessoas-credores)
-- [ACESSO FIN-CPG  Consultas](#acesso-fin-cpg-consultas)
-- 
 ## ACESSO CAD APOIO
 
 | ID | AÇAO |
