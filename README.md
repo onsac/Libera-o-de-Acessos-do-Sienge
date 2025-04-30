@@ -165,6 +165,17 @@ Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatiza
   GET
 /building/resources
   GET
+
+WebHooks
+
+/hooks
+  GET
+/hooks
+  POST
+/hooks/{hookId}
+  GET
+/hooks/{hookId}
+  DELETE
 ```
 ## Liberação de acessos de Ações do usuário no Sienge
 ## ACESSO CAD APOIO
