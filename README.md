@@ -22,18 +22,149 @@ Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatiza
 ## Liberação de acessos de API’s do Sienge
 
 ```sh
-/cost-centers
-/supply-contracts
-/purchase-quotations
-/creditors
 /enterprises
+  GET
 /companies
-/supply-contracts
-/purchase-invoices
-/nfes
-/purchase-orders
+  GET 
+/cost-centers
+  GET 
+
+
+/creditors
+  POST & GET
+
+
 /purchase-requests
+  GET & POST
+/purchase-requests/{purchaseRequestId}
+  GET
+/purchase-requests/all/items
+  GET
+/purchase-requests/{purchaseRequestId}/items/{purchaseRequestItemNumber}/buildings-appropriations
+  GET
+/purchase-requests/{purchaseRequestId}/items/{purchaseRequestItemNumber}/delivery-requirements
+  GET
+/purchase-requests/{purchaseRequestId}/items
+  POST
+
+
+/purchase-quotations
+  GET
+/purchase-quotations
+  POST
+/purchase-quotations/{purchaseQuotationId}/items
+  POST
+/purchase-quotations/{purchaseQuotationId}/items/from-purchase-request
+  POST
+/purchase-quotations/{purchaseQuotationId}/items/{purchaseQuotationItemNumber}/suppliers
+  POST
+/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations
+  POST
+/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations/{negotiationNumber}
+  PUT
+/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations/{negotiationNumber}/items/{quotationItemNumber}
+  PUT
+
+
+/purchase-orders
+  GET
+/purchase-orders/{purchaseOrderId}
+  GET
+/purchase-orders/{purchaseOrderId}/items
+  GET
+/purchase-orders/{purchaseOrderId}/items/{itemNumber}
+  GET
+/purchase-orders/{purchaseOrderId}/items/{itemNumber}/delivery-schedules
+  GET
+/purchase-orders/{purchaseOrderId}/items/{itemNumber}/buildings-appropriations
+  GET
+/purchase-orders/{purchaseOrderId}/totalization
+  GET
+/purchase-orders/{purchaseOrderId}/supplier-evaluation-criteria
+  GET
+/purchase-orders/{purchaseOrderId}/evaluation
+  POST
+/purchase-orders/{purchaseOrderId}/evaluation
+  PUT
+
+
+/supply-contracts
+  GET
+/supply-contracts/all
+  GET
+/supply-contracts/buildings
+  GET
+/supply-contracts/items
+  GET
+
+
 /bills
+  GET
+/bills/{billId}
+  GET
+/bills/by-change-date
+  GET
+
+
+/purchase-invoices/{sequentialNumber}
+  GET
+/purchase-invoices/{sequentialNumber}/items
+  GET
+/purchase-invoices
+  POST
+/purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules
+  POST
+/purchase-invoices/deliveries-attended
+  GET
+
+
+/nfes
+  GET
+/nfes/{nfeKey}
+  GET
+/nfes/{nfeKey}/issuers-recipients
+  GET
+/nfes/{nfeKey}/payments
+  GET
+/nfes/{nfeKey}/deliveries
+  GET
+/nfes/{nfeKey}/linked-nfes
+  GET
+/nfes/{nfeKey}/icms
+  GET
+/nfes/{nfeKey}/carriers
+  GET
+/nfes/{nfeKey}/issqn
+  GET
+/nfes/{nfeKey}/itens
+  GET
+/nfes/{nfeKey}/itens/{itemId}/ipi
+  GET
+/nfes/{nfeKey}/itens/{itemId}/pis-cofins
+  GET
+/nfes/{nfeKey}/itens/{itemId}/simplified-icms
+  GET
+/nfes/{nfeKey}/itens/{itemId}/issqn
+  GET
+/nfes/{nfeKey}/itens/{itemId}/icms
+  GET
+
+
+
+/building-cost-estimations/{buildingId}/resources
+  GET
+/building-cost-estimations/{buildingId}/resources
+  POST
+/building-cost-estimations/{buildingId}/resources/{id}
+  GET
+/building-cost-estimations/{buildingId}/resources/{id}
+  PATCH
+/building-cost-estimations/{buildingId}/cost-estimate-resources
+  GET
+/building-cost-estimation-items
+  GET
+/building/resources
+  GET
 ```
 ## Liberação de acessos de Ações do usuário no Sienge
 ## ACESSO CAD APOIO
