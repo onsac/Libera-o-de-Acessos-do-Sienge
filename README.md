@@ -24,28 +24,28 @@ Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatiza
 ```
 Processo de enriquecimento para Validação de Notas Fiscais
 
-Empreendimentos (Obras): https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/enterprise-v1
-
 ```
+Empreendimentos (Obras): 
+
 | Verbo | API |
 | --- | --- |
 | GET | /enterprises |
 
-Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/creditor-v1
+Credores:
 
 | Verbo | API |
 | --- | --- |
 | GET | /companies |
 
 
-Centro de Custos: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/cost-center-v1
+Centro de Custos: 
 
 | Verbo | API |
 | --- | --- |
 | GET | /cost-centers |
 
 
-Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/creditor-v1
+Credores: 
 
 | Verbo | API |
 | --- | --- |
@@ -55,7 +55,7 @@ Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_med
 
 Processo de verificação de Lançamento de Notas Fiscais
 
-Títulos do Contas a Pagar: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/bill-debt-v1
+Títulos do Contas a Pagar: 
 
 | Verbo | API |
 | --- | --- |
@@ -67,7 +67,7 @@ Títulos do Contas a Pagar: https://api.sienge.com.br/docs/?utm_source=cpc_googl
 
 Processo de Lançamento de Notas Fiscais
 
-Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/purchase-invoices-v1
+Nota Fiscal de Compra: 
 
 | Verbo | API |
 | --- | --- |
@@ -78,7 +78,7 @@ Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pma
 | GET | /purchase-invoices/deliveries-attended |
 
 
-Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/purchase-invoices-v1
+Nota Fiscal de Compra: 
 
 | Verbo | API |
 | --- | --- |
@@ -102,7 +102,7 @@ Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pma
 
 Processo de Saneamento da Base de Insumos
 
-Insumos do Orçamento da Obra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/building-cost-estimation-resources-v1
+Insumos do Orçamento da Obra: 
 
 | Verbo | API |
 | --- | --- |
