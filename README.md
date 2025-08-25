@@ -388,4 +388,14 @@ Geralmente é diferente do que está previsto no Pedido de Comprtas
 | 292 |	SUP-MED - Solicitações de Serviços - Cadastros - Obras e Unid. Construtivas - Orçamento - Consultar |
 | 295 |	SUP-MED - Solicitações de Serviços - Cancelamentos de Saldos - Consultar |
 
+## ACESSO NFE-NFS  Recepção Nota Fiscal Eletrônica Serviço
 
+| ID | AÇAO |
+| --- | --- |
+| 8723 |	NFE-NFS – Recepção Nota Fiscal Eletrônica Serviço – Notas Fiscais Recebidas – Consultar. |
+
+## ACESSO NFE-NFR  Recepção Nota Fiscal Eletrônica 
+
+| ID | AÇAO |
+| --- | --- |
+| 8271 |	NFE-NFR – Recepção Nota Fiscal Eletrônica – Notas Fiscais Recebidas – Consultar. |
