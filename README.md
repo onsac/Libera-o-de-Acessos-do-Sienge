@@ -32,7 +32,7 @@ Empreendimentos (Obras): https://api.sienge.com.br/docs/?utm_source=cpc_google-p
 | Verbo | API |
 | --- | --- |
 | GET | /enterprises |
-```
+
 Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/creditor-v1
 ```
 | Verbo | API |
