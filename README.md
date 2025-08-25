@@ -24,51 +24,52 @@ Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatiza
 
 Processo de enriquecimento para Validação de Notas Fiscais
 
-
+```
 Empreendimentos (Obras): https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/enterprise-v1
-  ```sh
+
+```
 | Verbo | API |
 | --- | --- |
 | GET | /enterprises |
-  ``` 
+
 Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/creditor-v1
-```
+
 | Verbo | API |
 | --- | --- |
 | GET | /companies |
-```
+
 
 Centro de Custos: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/cost-center-v1
-```
+
 | Verbo | API |
 | --- | --- |
 | GET | /cost-centers |
-```
+
 
 Credores: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/creditor-v1
-```
+
 | Verbo | API |
 | --- | --- |
 | GET | /creditors |
 | POST | /creditors |
-```
+
 
 Processo de verificação de Lançamento de Notas Fiscais
 
 Títulos do Contas a Pagar: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/bill-debt-v1
-```
+
 | Verbo | API |
 | --- | --- |
 | GET | /bills |
 | GET | /bills/{billId} |
 | GET | /bills/by-change-date |
-```
+
 
 
 Processo de Lançamento de Notas Fiscais
 
 Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/purchase-invoices-v1
-```
+
 | Verbo | API |
 | --- | --- |
 | GET | /purchase-invoices/{sequentialNumber} |
@@ -76,148 +77,44 @@ Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pma
 | POST | /purchase-invoices |
 | POST | /purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules |
 | GET | /purchase-invoices/deliveries-attended |
-```
+
 
 Nota Fiscal de Compra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/purchase-invoices-v1
-```
+
 | Verbo | API |
 | --- | --- |
-| GET | /purchase-invoices/{sequentialNumber} |
-| GET | /purchase-invoices/{sequentialNumber}/items |
-| POST | /purchase-invoices |
-| POST | /purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules |
-| GET | /purchase-invoices/deliveries-attended |
-```
+| GET | /nfes |
+| GET | /nfes/{nfeKey} |
+| GET | /nfes/{nfeKey}/issuers-recipients |
+| GET | /nfes/{nfeKey}/payments |
+| GET | /nfes/{nfeKey}/deliveries |
+| GET | /nfes/{nfeKey}/linked-nfes |
+| GET | /nfes/{nfeKey}/icms |
+| GET | /nfes/{nfeKey}/carriers |
+| GET | /nfes/{nfeKey}/issqn |
+| GET | /nfes/{nfeKey}/itens |
+| GET | /nfes/{nfeKey}/itens/{itemId}/ipi |
+| GET | /nfes/{nfeKey}/itens/{itemId}/pis-cofins |
+| GET | /nfes/{nfeKey}/itens/{itemId}/simplified-icms |
+| GET | /nfes/{nfeKey}/itens/{itemId}/issqn |
+| GET | /nfes/{nfeKey}/itens/{itemId}/icms |
 
-/nfes
-  GET
-/nfes/{nfeKey}
-  GET
-/nfes/{nfeKey}/issuers-recipients
-  GET
-/nfes/{nfeKey}/payments
-  GET
-/nfes/{nfeKey}/deliveries
-  GET
-/nfes/{nfeKey}/linked-nfes
-  GET
-/nfes/{nfeKey}/icms
-  GET
-/nfes/{nfeKey}/carriers
-  GET
-/nfes/{nfeKey}/issqn
-  GET
-/nfes/{nfeKey}/itens
-  GET
-/nfes/{nfeKey}/itens/{itemId}/ipi
-  GET
-/nfes/{nfeKey}/itens/{itemId}/pis-cofins
-  GET
-/nfes/{nfeKey}/itens/{itemId}/simplified-icms
-  GET
-/nfes/{nfeKey}/itens/{itemId}/issqn
-  GET
-/nfes/{nfeKey}/itens/{itemId}/icms
-  GET
+
 
 Processo de Saneamento da Base de Insumos
 
-/building-cost-estimations/{buildingId}/resources
-  GET
-/building-cost-estimations/{buildingId}/resources
-  POST
-/building-cost-estimations/{buildingId}/resources/{id}
-  GET
-/building-cost-estimations/{buildingId}/resources/{id}
-  PATCH
-/building-cost-estimations/{buildingId}/cost-estimate-resources
-  GET
-/building-cost-estimation-items
-  GET
-/building/resources
-  GET
+Insumos do Orçamento da Obra: https://api.sienge.com.br/docs/?utm_source=cpc_google-pmax-ads&utm_medium=cpc&utm_content=plataforma&utm_campaign=f2-p1p2p3p4-performance-max&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkFxSbFO_3ZPyWh8BheBH7R2gi44PvSI-Rz6hodUfvG-u49qYlgyFHxoCnGwQAvD_BwE#/building-cost-estimation-resources-v1
 
-Processo de Integração com Mercado Eletrônico (Requisição de Compras)
+| Verbo | API |
+| --- | --- |
+| GET | /building-cost-estimations/{buildingId}/resources |
+| POST | /building-cost-estimations/{buildingId}/resources |
+| GET | /building-cost-estimations/{buildingId}/resources/{id} |
+| PATCH | /purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules |
+| GET | /building-cost-estimations/{buildingId}/cost-estimate-resources |
+| GET | /building-cost-estimation-items |
+| GET | /building/resources |
 
-/purchase-requests
-  GET & POST
-/purchase-requests/{purchaseRequestId}
-  GET
-/purchase-requests/all/items
-  GET
-/purchase-requests/{purchaseRequestId}/items/{purchaseRequestItemNumber}/buildings-appropriations
-  GET
-/purchase-requests/{purchaseRequestId}/items/{purchaseRequestItemNumber}/delivery-requirements
-  GET
-/purchase-requests/{purchaseRequestId}/items
-  POST
-
-Processo de Integração com Mercado Eletrônico (Cotação)
-
-/purchase-quotations
-  GET
-/purchase-quotations
-  POST
-/purchase-quotations/{purchaseQuotationId}/items
-  POST
-/purchase-quotations/{purchaseQuotationId}/items/from-purchase-request
-  POST
-/purchase-quotations/{purchaseQuotationId}/items/{purchaseQuotationItemNumber}/suppliers
-  POST
-/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations
-  POST
-/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations/{negotiationNumber}
-  PUT
-/purchase-quotations/{purchaseQuotationId}/suppliers/{supplierId}/negotiations/{negotiationNumber}/items/{quotationItemNumber}
-  PUT
-
-Processo de Integração com Mercado Eletrônico (Pedido de Compras)
-
-/purchase-orders
-  GET
-/purchase-orders/{purchaseOrderId}
-  GET
-/purchase-orders/{purchaseOrderId}/items
-  GET
-/purchase-orders/{purchaseOrderId}/items/{itemNumber}
-  GET
-/purchase-orders/{purchaseOrderId}/items/{itemNumber}/delivery-schedules
-  GET
-/purchase-orders/{purchaseOrderId}/items/{itemNumber}/buildings-appropriations
-  GET
-/purchase-orders/{purchaseOrderId}/totalization
-  GET
-/purchase-orders/{purchaseOrderId}/supplier-evaluation-criteria
-  GET
-/purchase-orders/{purchaseOrderId}/evaluation
-  POST
-/purchase-orders/{purchaseOrderId}/evaluation
-  PUT
-
-Processo de Integração com Mercado Eletrônico (Contratos)
-
-/supply-contracts
-  GET
-/supply-contracts/all
-  GET
-/supply-contracts/buildings
-  GET
-/supply-contracts/items
-  GET
-
-Processo de Recepção de Eventos do Sienge via Webhooks para Integração com Mercado Eletrônico (Requisições, Pedidos e Contratos)
-
-WebHooks
-
-/hooks
-  GET
-/hooks
-  POST
-/hooks/{hookId}
-  GET
-/hooks/{hookId}
-  DELETE
-```
 ## Liberação de acessos de Ações do usuário no Sienge
 ## ACESSO CAD APOIO (Suporte Backoffice ONSAC)
 
@@ -491,4 +388,5 @@ Geralmente é diferente do que está previsto no Pedido de Comprtas
 | 269 |	SUP-MED - Solicitações de Serviços - Cadastros - Consultar |
 | 292 |	SUP-MED - Solicitações de Serviços - Cadastros - Obras e Unid. Construtivas - Orçamento - Consultar |
 | 295 |	SUP-MED - Solicitações de Serviços - Cancelamentos de Saldos - Consultar |
+
 
