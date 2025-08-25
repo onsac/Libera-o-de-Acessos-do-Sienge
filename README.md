@@ -27,9 +27,9 @@ Processo de enriquecimento para Validação de Notas Fiscais
 
 Empreendimentos (Obras):
 
-| Verbo | API | Link |
-| --- | --- | --- |
-| GET | /enterprises | teste |
+| Verbo | API |
+| --- | --- |
+| GET | /enterprises |
 
 
 
