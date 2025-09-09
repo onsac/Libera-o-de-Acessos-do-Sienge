@@ -50,7 +50,7 @@ Empresas:
 | --- | --- |
 | GET | /companies |
 
-Empresas: 
+Pedidos de Compra: 
 
 | Verbo | API |
 | --- | --- |
