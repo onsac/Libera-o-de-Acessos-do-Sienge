@@ -44,6 +44,17 @@ Centro de Custos:
 | --- | --- |
 | GET | /cost-centers |
 
+Empresas: 
+
+| Verbo | API |
+| --- | --- |
+| GET | /companies |
+
+Empresas: 
+
+| Verbo | API |
+| --- | --- |
+| GET | /purchase-orders |
 
 Credores: 
 
