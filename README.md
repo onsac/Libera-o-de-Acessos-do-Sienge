@@ -30,6 +30,7 @@ Empreendimentos (Obras):
 | Verbo | API |
 | --- | --- |
 | GET | /enterprises |
+| GET | /enterprises/{enterpriseId}  |
 
 Credores:
 
