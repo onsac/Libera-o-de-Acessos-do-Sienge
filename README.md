@@ -36,7 +36,8 @@ Credores:
 
 | Verbo | API |
 | --- | --- |
-| GET | /companies |
+| GET | /creditors/{creditorId} |
+| GET | /creditors |
 
 
 Centro de Custos: 
