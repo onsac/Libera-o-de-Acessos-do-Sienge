@@ -76,6 +76,7 @@ Títulos do Contas a Pagar:
 | GET | /bills/{billId} |
 | GET | /bills/by-change-date |
 | GET | /bills/"+numero_titulo+"/installments/"+installmentNumber |
+| GET | /bills/"+numero_titulo+"/attachments?description=NFE |
 
 
 
@@ -88,8 +89,8 @@ Nota Fiscal de Compra:
 | GET | /purchase-invoices/{sequentialNumber} |
 | GET | /purchase-invoices/{sequentialNumber}/items |
 | POST | /purchase-invoices |
-| POST | /purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules |
-| GET | /purchase-invoices/deliveries-attended |
+| PACH | /purchase-invoices/{sequentialNumber}/items/purchase-orders/delivery-schedules |
+| POST | /purchase-invoices/deliveries-attended |
 
 
 Nota Fiscal de Compra: 
