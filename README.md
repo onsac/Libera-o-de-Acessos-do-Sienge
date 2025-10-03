@@ -75,6 +75,7 @@ Títulos do Contas a Pagar:
 | GET | /bills |
 | GET | /bills/{billId} |
 | GET | /bills/by-change-date |
+| GET | /bills/"+numero_titulo+"/installments/"+installmentNumber |
 
 
 
