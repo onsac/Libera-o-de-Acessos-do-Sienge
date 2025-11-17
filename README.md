@@ -57,6 +57,9 @@ Pedidos de Compra:
 | Verbo | API |
 | --- | --- |
 | GET | /purchase-orders |
+| GET | /purchase-orders (purchase-ordersID) |
+| GET | purchase-orders/1/supplier-evaluation-criteria |
+| POST | /purchase-orders/1/evaluation|
 
 Credores: 
 
