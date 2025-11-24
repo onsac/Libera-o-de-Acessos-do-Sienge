@@ -78,8 +78,8 @@ Títulos do Contas a Pagar:
 | GET | /bills |
 | GET | /bills/{billId} |
 | GET | /bills/by-change-date |
-| GET | /bills/"+numero_titulo+"/installments/"+installmentNumber |
-| GET | /bills/"+numero_titulo+"/attachments?description=NFE |
+| PATCH | /bills/"+numero_titulo+"/installments/"+installmentNumber |
+| POST | /bills/"+numero_titulo+"/attachments?description=NFE |
 
 
 
