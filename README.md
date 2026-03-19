@@ -17,14 +17,174 @@
 A parceria entre a OnSAC e o Sienge é uma colaboração estratégica para fornecer soluções de automação e integração para empresas da construção civil. A OnSAC possui expertise em automação de processos de negócio e integração de sistemas, enquanto o Sienge é um software especializado em gestão para o setor da construção.
 Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatizar e otimizar seus processos, como o lançamento de notas fiscais, validação de pedidos, entre outros. A integração entre os sistemas permite uma maior eficiência operacional, redução de erros e agilidade nos pagamentos.
 
+Aqui está o seu conteúdo convertido em um **README.md profissional para GitHub**, com organização, âncoras e formatação adequada 👇
+
+---
+
+# 📄 Guia de Liberação de Usuário e Permissões no Sienge
+---
+
+## 📋 Visão Geral
+
+Esta documentação reúne todos os endpoints necessários para uma integração completa com o Sienge, com foco em automação e eficiência operacional:
+
+* 📄 Consulta e conciliação de Notas Fiscais
+* 💰 Gestão de Títulos a Pagar
+* 📦 Pedidos de Compra
+* 👤 Fornecedores
+* 📋 Requisições de Compra
+* 📐 Medições de Contratos
+* 📊 Orçamentos e Centros de Custo
+
+**Versão da API:** `v1`
+**Arquitetura:** REST
+**Formato de dados:** JSON
+
+---
+
+## 👤 Usuários a Serem Criados
+
+Recomendamos a criação de **dois usuários distintos**:
+
+### 🔹 Usuário 1 – Suporte Backoffice OnSAC 
+
+* **Nome de usuário sugerido:** `onsac.suporte` ou `baliza.onsac`
+* **Nome completo:** OnSAC Suporte Backoffice
+* **Tipo:** Usuário Interno / Suporte
+* **Finalidade:** Consultas, validações e suporte operacional
+
+---
+
+### 🔹 Usuário 2 – Automação BOT OnSAC 
+
+* **Nome de usuário sugerido:** `onsac.bot` ou `bot.nfcheckin`
+* **Nome completo:** OnSAC Bot NF-Check-In
+* **Tipo:** Usuário de Integração / Serviço
+* **Finalidade:** Execução automática da integração (leitura e atualização de dados)
+
+### 🔹 Usuário 3 – Automação API 
+
+A API utiliza **Basic Authentication**.
+
+### 🔧 Variáveis de Ambiente (Postman / .env)
+
+| Variável   | Descrição                | Exemplo                            |
+| ---------- | ------------------------ | ---------------------------------- |
+| `base_url` | URL base da API          | `https://api.sienge.com.br`        |
+| `ambiente` | Nome do ambiente/cliente | `cliente`                            |
+| `user`     | Usuário de integração    | `onsac`                     |
+| `key`      | Chave de API (senha)     | `3YxYYEHMg4y7nCR3C6t8qO753lOinHYB` |
+---
+
+# 🚀 SIENGE API - Integração NF-Check-In Standard
+
+Documentação oficial da integração entre o sistema **NF-Check-In (OnSAC)** e a API do **Sienge**.
 
 
-## Liberação de acessos de API’s do Sienge
+## 🔗 Documentação Oficial
 
-```
-Processo de enriquecimento para Validação de Notas Fiscais
+* 📘 API Sienge: [https://api.sienge.com.br/docs](https://api.sienge.com.br/docs)
+* 📍 Exemplo específico: Progress Logs (Obras)
+---
 
-```
+## 📚 Endpoints
+
+---
+
+### 🔗 Configuração & Webhooks
+
+| Método | Endpoint | Descrição                   |
+| ------ | -------- | --------------------------- |
+| `GET`  | `/hooks` | Listar Webhooks cadastrados |
+| `POST` | `/hooks` | Criar novo Webhook          |
+
+---
+
+### 🏢 Empresas, Obras e Centros de Custo
+
+| Recurso          | Método | Endpoint        | Parâmetros                     |
+| ---------------- | ------ | --------------- | ------------------------------ |
+| Empresas         | `GET`  | `/companies`    | `limit`, `offset`              |
+| Empreendimentos  | `GET`  | `/enterprises`  | `companyId`, `limit`, `offset` |
+| Centros de Custo | `GET`  | `/cost-centers` | -                              |
+
+---
+
+### 👤 Fornecedores (Creditors)
+
+| Método | Endpoint     | Filtros            |
+| ------ | ------------ | ------------------ |
+| `GET`  | `/creditors` | `cnpj`, `creditor` |
+
+---
+
+### 📦 Pedidos de Compra (Purchase Orders)
+
+| Método | Endpoint                                          | Descrição            |
+| ------ | ------------------------------------------------- | -------------------- |
+| `GET`  | `/purchase-orders/{purchaseOrderId}`              | Buscar por ID        |
+| `GET`  | `/purchase-orders`                                | Listagem com filtros |
+| `GET`  | `/purchase-orders/{purchaseOrderId}/totalization` | Totalização          |
+
+---
+
+### 📄 Notas Fiscais
+
+| Método | Endpoint                               | Descrição        |
+| ------ | -------------------------------------- | ---------------- |
+| `GET`  | `/purchase-invoices/{invoiceId}`       | Buscar NF        |
+| `GET`  | `/purchase-invoices`                   | Listar NFs       |
+| `GET`  | `/purchase-invoices/{invoiceId}/items` | Itens            |
+| `GET`  | `/nfes`                                | NF-e eletrônicas |
+
+---
+
+### 💰 Títulos a Pagar (Bills)
+
+| Método  | Endpoint                                 | Descrição         |
+| ------- | ---------------------------------------- | ----------------- |
+| `GET`   | `/bills/{billId}`                        | Buscar título     |
+| `GET`   | `/bills/{billId}/installments`           | Parcelas          |
+| `PATCH` | `/bills/{billId}/installments/{parcela}` | Atualizar parcela |
+| `POST`  | `/bills/{billId}/attachments`            | Anexar arquivo    |
+| `GET`   | `/bills/{billId}/taxes`                  | Impostos          |
+
+---
+
+### 📐 Contratos e Medições
+
+| Método | Endpoint                                  | Descrição            |
+| ------ | ----------------------------------------- | -------------------- |
+| `GET`  | `/supply-contracts/measurements/all`      | Medições por período |
+| `GET`  | `/supply-contracts/measurements/items`    | Itens                |
+| `GET`  | `/supply-contracts/measurements/clearing` | Liberação            |
+
+---
+
+### 📋 Requisições de Compra
+
+| Método | Endpoint                               | Descrição        |
+| ------ | -------------------------------------- | ---------------- |
+| `POST` | `/purchase-requests`                   | Criar requisição |
+| `POST` | `/purchase-requests/{requestId}/items` | Adicionar itens  |
+
+---
+
+### 📊 Orçamentos (Building Cost Estimations)
+
+| Método | Endpoint                                                            | Descrição |
+| ------ | ------------------------------------------------------------------- | --------- |
+| `GET`  | `/building-cost-estimations/{estimationId}/resources`               | Recursos  |
+| `GET`  | `/building-cost-estimations/{estimationId}/cost-estimate-resources` | Itens     |
+| `GET`  | `/building-cost-estimations/{estimationId}/sheets`                  | Planilhas |
+
+---
+
+## ⚙️ Liberação de Ações (Permissões Internas)
+
+Favor liberar **todas as ações abaixo** para os respectivos usuários.
+
+
 Empreendimentos (Obras): 
 
 | Verbo | API |
