@@ -17,10 +17,6 @@ Esta documentação reúne todos os endpoints necessários para uma integração
 * 📐 Medições de Contratos
 * 📊 Orçamentos e Centros de Custo
 
-**Versão da API:** `v1`
-**Arquitetura:** REST
-**Formato de dados:** JSON
-
 ---
 
 ## 👤 Usuários a Serem Criados
