@@ -1,25 +1,6 @@
-<p align="center">
-  <a href="https://onsac.com/">
-    <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/onsac_01.png" width="200" height="100" >
-  </a>
-</p>
-<p align="center">
- Integração e  Automação em tempo real
-  <br>
-  <a href="https://onsac.com/"><strong>Conheça mais sobre nosso serviço »</strong></a>
-  </p>
+# 🚀 SIENGE API - Integração NF-Check-In Standard
 
-## Parceria OnSAC com Sienge 
-<p align="center">
-     <img src="https://github.com/onsac/Libera-o-de-Acessos-do-Sienge/blob/main/OnSAC%20%2B%20Sienge.png" >
-</p>
-
-A parceria entre a OnSAC e o Sienge é uma colaboração estratégica para fornecer soluções de automação e integração para empresas da construção civil. A OnSAC possui expertise em automação de processos de negócio e integração de sistemas, enquanto o Sienge é um software especializado em gestão para o setor da construção.
-Essa parceria visa oferecer aos clientes do Sienge a possibilidade de automatizar e otimizar seus processos, como o lançamento de notas fiscais, validação de pedidos, entre outros. A integração entre os sistemas permite uma maior eficiência operacional, redução de erros e agilidade nos pagamentos.
-
-Aqui está o seu conteúdo convertido em um **README.md profissional para GitHub**, com organização, âncoras e formatação adequada 👇
-
----
+Documentação oficial da integração entre o sistema **NF-Check-In (OnSAC)** e a API do **Sienge**.
 
 # 📄 Guia de Liberação de Usuário e Permissões no Sienge
 ---
@@ -76,15 +57,10 @@ A API utiliza **Basic Authentication**.
 | `key`      | Chave de API (senha)     | `3YxYYEHMg4y7nCR3C6t8qO753lOinHYB` |
 ---
 
-# 🚀 SIENGE API - Integração NF-Check-In Standard
-
-Documentação oficial da integração entre o sistema **NF-Check-In (OnSAC)** e a API do **Sienge**.
-
 
 ## 🔗 Documentação Oficial
 
 * 📘 API Sienge: [https://api.sienge.com.br/docs](https://api.sienge.com.br/docs)
-* 📍 Exemplo específico: Progress Logs (Obras)
 ---
 
 ## 📚 Endpoints
