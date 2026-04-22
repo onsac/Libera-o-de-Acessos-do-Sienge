@@ -248,6 +248,14 @@ Nota Fiscal de Compra:
 | GET | /nfes/{nfeKey}/itens/{itemId}/issqn |
 | GET | /nfes/{nfeKey}/itens/{itemId}/icms |
 
+Webhooks:
+
+| Verbo | API |
+| --- | --- |
+| GET | /hooks | Consulta paginada de WebHooks |
+| POST | /hooks | Insere um novo WebHook |
+| GET | /hooks/{hookId} | Consulta um WebHook específico por ID |
+| DELETE |/hooks/{hookId} | Remove um WebHook específico por ID |
 
 
 Processo de Saneamento da Base de Insumos
